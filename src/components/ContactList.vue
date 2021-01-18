@@ -13,11 +13,7 @@
 </template>
 
 <script>
-<<<<<<< HEAD
-import Contact from "./Contact";
-=======
 import Contact from "./Contact.vue";
->>>>>>> eeab3175fe5787e5014cc99c283289962ca6464a
 export default {
   name: "ContactList",
   components: { Contact },
