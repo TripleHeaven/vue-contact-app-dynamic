@@ -6,7 +6,9 @@
       телефон:<span class="cphone">{{ contact.phone }}</span>
     </div>
     <div class="contactMenu">
-      <a :href="`/ContactsPage/` + id"><button>Подробная информация</button></a>
+      <router-link :to="link + String(id)"
+        ><button>Подробная информация</button></router-link
+      >
       <button class="deleteButton" @click="deleteContact()">Удалить</button>
     </div>
   </div>
@@ -25,6 +27,11 @@ export default {
       const name = this.contact.name;
       this.$emit("deleteContact", this.id, name);
     },
+  },
+  data() {
+    return {
+      link: "/ContactsPage/",
+    };
   },
 };
 </script>

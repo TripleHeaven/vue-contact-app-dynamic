@@ -11,18 +11,21 @@ Vue.use(Router);
 
 export default new Router ({
   mode: 'history',
-  base: process.env.VUE_APP_MODE === 'production' ? '/' : '/contacts-app/',
+  base: '/vue-contact-app-dynamic/',
   routes : [
     {
     path: '/',
     component: WelcomePage ,
   },
   {
+
     path: '/ContactsPage',
     component : PageOne, 
+   
     props: true,},
   {
     // динамический путь
+   
     path: '/ContactsPage/:id',
     component: ContactDetail ,
     props: true,

@@ -2,8 +2,13 @@
   <div class="contactDetailWrapper">
     <div class="contactDetailConatainer">
       <div class="topButtonsContainer">
+<<<<<<< HEAD
         <a href="/ContactsPage">
           <button class="backToButton">Назад к контактам</button></a
+=======
+        <router-link to="/ContactsPage">
+          <button class="backToButton">Назад к контактам</button></router-link
+>>>>>>> eeab3175fe5787e5014cc99c283289962ca6464a
         >
         <button class="cancelLastAction" @click="cancelLastChange()">
           Отменить последнее действие
@@ -85,9 +90,31 @@ export default {
       changedField: {},
     };
   },
+<<<<<<< HEAD
   watch: {
     contacts() {
       // Получив контакт от родителя, заполняем его в переменные текущего компонента
+=======
+  mounted() {
+    // Получив контакт от родителя, заполняем его в переменные текущего компонента
+    this.contact = this.contacts[this.getIdOfCurrentContact()];
+    this.fields = [];
+    let index = 0;
+    for (const propertyName in this.contact) {
+      this.fields.push({
+        fieldName: propertyName,
+        fieldValue: this.contact[propertyName],
+        // Переменная для входа/выхода из режима редактирования
+        isRedactMode: false,
+        // Индекс поля среди всех полей контакта
+        fieldIndex: index,
+      });
+      index += 1;
+    }
+  },
+  watch: {
+    contacts() {
+>>>>>>> eeab3175fe5787e5014cc99c283289962ca6464a
       this.contact = this.contacts[this.getIdOfCurrentContact()];
       this.fields = [];
       let index = 0;

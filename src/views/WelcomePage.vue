@@ -12,6 +12,7 @@
       >Если у вас что-то не запустилось или вылезла какая-то ошибка, будьте
       добры, напишите мне на почту: geroy1219@gmail.com</span
     >
+<<<<<<< HEAD
     <a href="/ContactsPage">К заданию! </a>
   </div>
 </template>
@@ -44,6 +45,12 @@ export default {
 };
 </script>
 
+=======
+    <router-link to="/ContactsPage">К заданию!</router-link>
+  </div>
+</template>
+
+>>>>>>> eeab3175fe5787e5014cc99c283289962ca6464a
 <style lang="scss">
 html,
 body {
