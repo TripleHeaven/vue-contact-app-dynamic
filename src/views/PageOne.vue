@@ -45,10 +45,6 @@ export default {
       }
     },
     addContact(name, phone) {
-<<<<<<< HEAD
-      alert(name);
-=======
->>>>>>> eeab3175fe5787e5014cc99c283289962ca6464a
       this.$emit("addContact", name, phone);
     },
   },

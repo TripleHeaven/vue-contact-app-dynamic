@@ -3,11 +3,7 @@
     <header>
       <!-- Шапка видна на всех страницах -->
       <div class="container">
-<<<<<<< HEAD
-        <a href="/"> <p>Книга контактов</p></a>
-=======
         <router-link to="/"> <p>Книга контактов</p></router-link>
->>>>>>> eeab3175fe5787e5014cc99c283289962ca6464a
       </div>
     </header>
     <!-- Передаем все необходимые функции для работы с глобальным состоянием contacts -->
@@ -66,11 +62,7 @@ export default {
   },
   watch: {
     // любые изменения в контактах заносятся в sessionStorage
-<<<<<<< HEAD
     contacts: function(b) {
-=======
-    contacts: function (b) {
->>>>>>> eeab3175fe5787e5014cc99c283289962ca6464a
       sessionStorage["contacts"] = JSON.stringify(b);
     },
   },
