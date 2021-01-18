@@ -1,5 +1,11 @@
 # Книга контактов на VueJs + VueRouter
 
+## Внешний вид
+
+![](mainpage.png "Main Page")
+
+![](detailed.png "Detailed contact page")
+
 ## Компиляция 
 ```
 npm run serve
